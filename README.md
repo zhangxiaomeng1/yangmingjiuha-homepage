@@ -1,9 +1,13 @@
-# 阳明科技主页
+# 阳明九哈科技主页
 
-[阳明科技｜AI 应用与全球化移动互联网产品](https://zhangxiaomeng1.github.io/zhangxiaomeng.github.io/)
+阳明九哈科技主页是北京阳明九哈科技有限公司的品牌与产品展示站，围绕 AI 应用、iOS 工程和全球化移动互联网产品，集中呈现公司的产品方向、服务能力与公开作品。
 
-主页聚合公司介绍、7 款 App 作品集、AI Agent 与 iOS 服务入口。
+项目内容包括：
 
+- AI Agent、iOS 工程与 App 出海能力介绍；
+- 8 款面向全球 App Store 的效率与生活工具；
+- AI iOS 单点诊断、MVP 陪跑和七日上架服务；
+- 产品演示和浏览器互动小游戏。
 
 本地预览：
 
@@ -11,7 +15,4 @@
 python3 server.py
 ```
 
-然后访问 [http://127.0.0.1:8001/](http://127.0.0.1:8001/)。
-![](https://upload-images.jianshu.io/upload_images/814874-f6d7624e98c0c0ad.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
-
+然后访问终端输出的本地地址，默认是 [http://127.0.0.1:8005/](http://127.0.0.1:8005/)。
