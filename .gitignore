@@ -1,0 +1,22 @@
+.DS_Store
+.workbuddy/
+
+# Personal documents and local planning artifacts
+*.pdf
+*.docx
+*.xlsx
+*.pptx
+*.ndjson
+resume_*.md
+personGithub*.md
+personGithub.html
+build_initial_plan.py
+fill_32_from_21_22_31.py
+fill_34_in_original.py
+fill_remaining_plan.py
+update_market_analysis.py
+
+# Generated/private output folders; keep the published presentation tracked.
+outputs/*
+!outputs/yangming-tech-homepage-deck/
+!outputs/yangming-tech-homepage-deck/**
