@@ -9,7 +9,8 @@ body { font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro
 .stage-ratepilot { width: 92px; height: 92px; left: 28%; top: 13%; padding: 7px; animation-delay: -1.5s; }
 .stage-stamp { width: 96px; height: 96px; right: 29%; bottom: 12%; padding: 7px; animation-delay: -3.8s; }
 .stage-countdown { width: 90px; height: 90px; right: 28%; top: 12%; padding: 7px; animation-delay: -4.9s; }
-.stage-ratepilot img, .stage-stamp img, .stage-countdown img { object-fit: cover; }
+.stage-duocue { width: 82px; height: 82px; left: 32%; bottom: 10%; padding: 6px; animation-delay: -5.7s; }
+.stage-ratepilot img, .stage-stamp img, .stage-countdown img, .stage-duocue img { object-fit: cover; }
 
 .card-ratepilot { grid-column: span 6; color: #eff7ff; background: radial-gradient(circle at 75% 15%, rgba(81, 167, 255, .36), transparent 35%), linear-gradient(145deg, #101d38, #19365a); }
 .card-ratepilot .platform-pill, .card-ratepilot p { color: #b8d1eb; }
@@ -23,6 +24,15 @@ body { font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro
 .card-countdown .platform-pill, .card-countdown p { color: #8b6265; }
 .card-countdown .card-link { color: #c8474f; }
 .card-countdown .card-icon { box-shadow: 0 20px 45px rgba(151, 62, 72, .14); }
+.card-duocue { grid-column: span 12; min-height: 390px; color: #eff8ff; background: radial-gradient(circle at 78% 18%, rgba(24, 198, 238, .28), transparent 34%), linear-gradient(145deg, #0c111d, #182b46 58%, #311d35); }
+.card-duocue .platform-pill, .card-duocue p { color: #b4c9d9; }
+.card-duocue .card-number { color: rgba(255, 255, 255, .44); }
+.card-duocue .card-link { color: #74dcff; }
+.duocue-visual { position: absolute; top: 32px; right: 56px; width: 218px; height: 218px; display: grid; place-items: center; }
+.duocue-visual::before { content: ""; position: absolute; inset: 2px; border: 1px solid rgba(116, 220, 255, .24); border-radius: 50%; box-shadow: 0 0 0 20px rgba(116, 220, 255, .04), 0 0 0 42px rgba(255, 111, 98, .05); }
+.duocue-visual img { position: relative; z-index: 2; width: 148px; height: 148px; border-radius: 38px; object-fit: cover; box-shadow: 0 24px 60px rgba(0, 0, 0, .38); transform: rotate(5deg); }
+.duocue-beam { position: absolute; z-index: 1; right: -12px; bottom: 15px; width: 126px; height: 7px; border-radius: 999px; background: linear-gradient(90deg, #ff776c, #27d6f4); box-shadow: 0 0 18px rgba(39, 214, 244, .55); transform: rotate(-7deg); }
+.card-duocue .card-copy { max-width: 58%; }
 .new-app-icon { position: absolute; top: 34px; right: 38px; width: 150px; height: 150px; overflow: hidden; display: grid; place-items: center; border: 1px solid rgba(255, 255, 255, .18); border-radius: 42px; box-shadow: 0 24px 60px rgba(0, 0, 0, .24), inset 0 1px 0 rgba(255, 255, 255, .24); transform: rotate(6deg); }
 .new-app-icon img { width: 100%; height: 100%; object-fit: cover; border-radius: inherit; }
 .card-ratepilot .card-copy, .card-stamp .card-copy { max-width: 78%; }
@@ -75,6 +85,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro
   .stage-ratepilot { left: 24%; top: 13%; }
   .stage-stamp { right: 24%; bottom: 12%; }
   .stage-countdown { right: 27%; top: 12%; }
+  .stage-duocue { left: 31%; bottom: 10%; }
   .card-ratepilot, .card-stamp { grid-column: span 6; }
   .service-grid { grid-template-columns: 1fr; }
   .service-card { min-height: auto; }
@@ -97,10 +108,15 @@ body { font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro
   .stage-ratepilot { width: 62px; height: 62px; left: 25%; top: 14%; padding: 5px; }
   .stage-stamp { width: 64px; height: 64px; right: 24%; bottom: 14%; padding: 5px; }
   .stage-countdown { width: 60px; height: 60px; right: 26%; top: 12%; padding: 5px; }
+  .stage-duocue { width: 60px; height: 60px; left: 31%; bottom: 10%; padding: 5px; }
   .new-app-icon { top: 28px; right: 28px; width: 116px; height: 116px; border-radius: 34px; }
   .card-ratepilot, .card-stamp { grid-column: auto; min-height: 470px; }
   .card-ratepilot .card-copy, .card-stamp .card-copy { max-width: 100%; }
-  .card-countdown { grid-column: auto; min-height: 470px; }
+  .card-countdown, .card-duocue { grid-column: auto; min-height: 470px; }
+  .duocue-visual { top: 24px; right: 28px; width: 154px; height: 154px; }
+  .duocue-visual img { width: 108px; height: 108px; border-radius: 28px; }
+  .duocue-beam { right: -4px; bottom: 4px; width: 92px; height: 5px; }
+  .card-duocue .card-copy { max-width: 100%; }
   .wechat-card { align-items: flex-start; gap: 14px; }
   .wechat-card img { flex-basis: 132px; width: 132px; height: 132px; }
   .services-section { width: calc(100% - 28px); margin-bottom: 110px; }
