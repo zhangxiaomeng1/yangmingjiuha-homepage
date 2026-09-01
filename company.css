@@ -1,6 +1,7 @@
 /* Root homepage overrides: the Life Coach visual language, adapted for Yangming Technology. */
 body { font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "PingFang SC", "Microsoft YaHei", sans-serif; }
 .brand { letter-spacing: -.02em; }
+.brand-mark { display: block; object-fit: cover; background: transparent; box-shadow: 0 8px 18px rgba(0, 79, 205, .18); }
 .hero h1, .featured h2, .section-heading h2, .about h2, .contact h2 { word-break: keep-all; }
 .hero-lead { max-width: 660px; }
 .hero-cn { font-weight: 650; color: #5f6570; }
